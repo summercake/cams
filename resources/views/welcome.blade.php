@@ -62,6 +62,9 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            i{
+                float: right;
+            }
         </style>
     </head>
     <body>
@@ -69,7 +72,7 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/') }}">Home</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
                         <a href="{{ route('register') }}">Register</a>
@@ -79,9 +82,9 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Laravel <i><small>-- CAMS 1.0</small> </i>
+                    <br>
                 </div>
-
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>
